@@ -1,0 +1,39 @@
+
+:root{
+    /* ===========================
+          Colors 
+     ===========================*/
+     --color-White: hsl(0, 0%, 100%); 
+     --color-SlightlyTransparentWhite1: hsla(0, 0%, 100%, 0.75); /* main paragraph */
+     --color-SlightlyTransparentWhite2: hsla(0, 0%, 100%, 0.6); /* stat headings */
+     --color-Darkblue: hsl(233, 47%, 7%); /* main background */
+     --color-Desaturatedblue: hsl(244, 38%, 16%);  /* card background */
+     --color-SoftViolet: hsl(277, 64%, 61%); /* (accent)*/
+
+   /* =========================
+        Font Weights
+    ===========================*/
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* =========================
+    Font Types
+    =========================*/
+    --ff-Inter: "Inter", sans-serif;
+    --ff-LexendDeca: "Lexend Deca", sans-serif;
+ 
+/* ===========================
+            Radii 
+    ===========================*/
+
+    --radius-1: 0.5rem /* 8px */;
+    --radius-2: 0.625rem /* 10px */;
+    --radius-3: 0.75rem /* 12px */ ;
+    --radius-4: 0.875rem /* 14px */ ;
+    --radius-5: 1rem /* 16px */ ;
+
+
+    }
+    .body{
+        font-family: var(--ff-Inter);
+    }
