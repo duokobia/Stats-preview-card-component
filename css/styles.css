@@ -15,6 +15,7 @@
         Font Weights
     ===========================*/
     --fw-400: 400;
+    --fw-500: 500;
     --fw-700: 700;
 
     /* =========================
@@ -50,39 +51,44 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 'article image';
         width: 70%;
-        border-radius: 10px;
+        border-radius: var(--radius-5);
         background-color: var(--color-Desaturatedblue);
     }
     #card-section-article{
         grid-area: article;
         justify-content: left;
-        padding: 40px 80px 10px 60px;
+        padding: 5rem 8rem 0 6rem;
     }
     .article-header{
         display: block;
         width: fit-content;
-        padding-bottom: 30px;
+        padding-bottom: 2.5rem;
+        font-weight: var(--fw-700);
+        letter-spacing: 0.085rem;
     }
     .insight{
-        color: blueviolet;
-        padding: 0 5px 0 5px;
+        color:var(--color-SoftViolet);
+        padding: 0 0.5rem 0 0.5rem;
     }
     .article-paragraph{
-        padding-bottom: 80px;
-        opacity: 0.5;
+        font-size: 1.4rem;
+        font-weight: var(--fw-400);
+        padding-bottom: 8rem;
+        opacity: 0.60;
     }
     .article-list{
         justify-content: space-between;
     }
     .article-list-item{
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: var(--fw-700);
     }
     .article-list-item-span{
-        font-size: 12px;
-        font-weight: 400;
-        opacity: 0.85;
+        font-size: 1.2rem;
+        font-weight: var(--fw-500);
+        opacity: 0.45;
         text-transform: uppercase;
+        letter-spacing: 0.095rem;
     }
     #card-section-image{
         width: 100%;
@@ -96,53 +102,12 @@
         right: 0;
         height: 100%;
         width: 100%;
-        background-color: blueviolet;
-        opacity: 0.25;
+        background: var(--color-SoftViolet);
+        opacity: 0.45;
         border-radius: 0 0.75rem 0.75rem 0;
     }
     img{
         border-radius: 0 0.75rem 0.75rem 0;
-    }
-   
-
-    @media only screen and (max-width:568px){
-        .container{
-            height: 100vh;
-            overflow-y: scroll;
-        }
-      
-        .card-section-grid{
-            grid-template-columns: 1fr;
-            grid-template-rows: 1.3fr 1.6fr;
-            grid-template-areas: 
-            'image'
-            'article';
-            width: 90%;
-            height: 90%;
-            border-radius: 10px; 
-        }
-        #card-section-article{
-            flex-direction: column;
-            padding: 30px 30px 50px 30px;
-            background-color: var(--color-Desaturatedblue);
-            border-radius: 0 0 0.75rem 0.75rem;
-            margin-bottom: 60px;
-        }
-     
-        .article-paragraph{
-            padding-bottom: 30px;
-        }
-        .article-list{
-            flex-direction: column;
-        }
-        .article-list-item{
-            padding-bottom: 20px;
-            align-items: center;
-        }
-        img{
-            width: 100%;
-            border-radius: 0.75rem 0.75rem 0 0;
-        }
     }
 
     /* Utility class */
@@ -166,4 +131,53 @@
     }
     .h-center{
         justify-content: center;
+    }
+
+    @media only screen and (max-width:568px){
+        .container{
+            height: 130vh;
+            overflow-y: scroll;
+        }
+        .card-section-grid{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1.3fr 1.6fr;
+            grid-template-areas: 
+            'image'
+            'article';
+            width: 90%;
+            height: 90%;
+            border-radius: var(--radius-5); 
+        }
+        #card-section-article{
+            flex-direction: column;
+            padding: 30px 20px 50px 20px;
+            background-color: var(--color-Desaturatedblue);
+            border-radius: 0 0 0.75rem 0.75rem;
+            margin-bottom: 60px;
+        }
+        .article-header{
+            text-align: center;
+            letter-spacing: 0.035rem;
+        }
+        .article-paragraph{
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .paragraph-line{
+            display: block;
+        }
+        .indented-line{
+            padding-left: 15px;
+        }
+        .article-list{
+            flex-direction: column;
+        }
+        .article-list-item{
+            padding-bottom: 20px;
+            align-items: center;
+        }
+        img{
+            width: 100%;
+            border-radius: 0.75rem 0.75rem 0 0;
+        }
     }
