@@ -29,13 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/desktop.png)
-![](./screenshots/mobile.png)
+![](./screenshots/spcc-desktop.png)
+![](./screenshots/spcc-mobile.png)
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://duokobia.github.io////)
+- Live Site URL: [Add live site URL here](https://duokobia.github.io/Stats-preview-card-component/)
 
 
 ## My process
